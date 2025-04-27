@@ -43,7 +43,7 @@ class AuthController extends GetxController {
        gamesPlayed: 0,
        gamesWon: 0,
        winPercentage: 0,
-        createdAt: DateTime.now(),
+       // createdAt: DateTime.now(),
         team: '',
 
       );
@@ -75,7 +75,7 @@ class AuthController extends GetxController {
         email: signupEmailController.text,
         name: signupNameController.text,
         phone: signupPhoneController.text,
-        createdAt: DateTime.now(),
+        //createdAt: DateTime.now(),
         team: '',
         country: '',
         rank: 0,

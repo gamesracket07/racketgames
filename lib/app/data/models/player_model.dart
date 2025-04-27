@@ -6,13 +6,13 @@ class Player {
   final int rank;
   final String gender;
   final int individualScore;
-  final String email;
-  final String phone;
-  final String? photoUrl;
+  late String email;
+  late String phone;
+  late String? photoUrl;
   final int gamesPlayed;
   final int gamesWon;
   final double winPercentage;
-  late DateTime createdAt;
+  late DateTime? createdAt;
 
   Player({
     required this.id,
@@ -28,7 +28,7 @@ class Player {
     this.gamesPlayed = 0,
     this.gamesWon = 0,
     this.winPercentage = 0.0,
-    required DateTime createdAt,
+    this.createdAt =null,
 
   });
 
@@ -65,7 +65,7 @@ class Player {
     'gender': gender,
     'individualScore': individualScore,
 
-    'createdAt': createdAt.toIso8601String(),
+    'createdAt': createdAt?.toIso8601String(),
   };
 
 }

@@ -11,7 +11,7 @@ void main() {
   runApp(
     GetMaterialApp(
       title: 'Racket Games',
-      initialRoute: Routes.LOGIN,
+      initialRoute: Routes.ACADEMY_LOGIN,
       getPages: AppPages.routes,
       theme: ThemeData(
         primarySwatch: Colors.blue,

@@ -2,6 +2,7 @@
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import '../../../data/models/academy_user_model.dart';
+import '../../../routes/app_routes.dart';
 
 class AcademyAuthController extends GetxController {
   final emailController = TextEditingController();
@@ -42,7 +43,7 @@ class AcademyAuthController extends GetxController {
         // TODO: Implement secure credential storage
       }
 
-      Get.offAllNamed('/academy-dashboard');
+      Get.offAllNamed(Routes.ACADEMY_HOME);
     } catch (e) {
       Get.snackbar(
         'Error',
